@@ -1,0 +1,120 @@
+$color_3: #777777;
+$background_gray: rgba(222,29,58,1);
+$background_white: transparent;
+
+/* Header */
+header {
+	.header-topbar {
+		background: $backgrooundtop;
+		padding: 8px 0;
+		.list-address {
+			li {
+				margin-right: 30px;
+			}
+			img {
+				width: 14px;
+				height: 14px;
+				margin-right: 10px;
+			}
+			span {
+				font-family: $RobotoRegular;
+				font-size: 13px;
+				color: $gray;
+				line-height: 18px;
+			}
+		}
+	}
+	.logo-line {
+		padding: 16px 0;
+	}
+	.menu-primary {
+		background: $colormenu;
+		.menu-item {
+			font-size: 15px;
+			color: $white;
+			letter-spacing: 1px;
+			font-weight: bold;
+			line-height: 4.5rem;
+			padding: 0 1.5rem;
+			text-transform: uppercase;
+			&:hover {
+				transition: $transition;
+				background-color: $background_gray !important;
+			}
+			&:focus {
+				background-color: $background_gray !important;
+			}
+			@media (min-width: 991px) and (max-width: 1200px) {
+				font-size: 10px;
+			}
+		}
+	}
+	.dropdown {
+		a {
+			&:after {
+				content: "";
+				background: url(../images/icons/arrow-menu.svg) no-repeat;
+				width: 10px;
+				height: 9px;
+				background-size: contain;
+				top: 46%;
+				right: 5px;
+				position: absolute;
+			}
+		}
+		a.tran:after {
+			transition: all 0.3s ease;
+			top: 41%;
+			transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+    		-webkit-transform: rotate(180deg);
+    		-o-transform: rotate(180deg);
+		}
+	}
+	.dropdown-menu {
+		display: none;
+		.dropdown-item {
+			font-size: 1.4rem;
+			text-transform: none;
+			line-height: 4.3rem;
+			border-bottom: 0.1rem solid #f3f3f3;
+			color: $color_3;
+			font-weight: 400;
+			background-color: $background_white;
+		}
+	}
+	.dropdown-menu.hover {
+		display: block;
+	}
+	.header-mobile {
+		display: none;
+	}
+	@media (max-width: 991px) {
+		.header-topbar, .logo-line, .menu-top {
+			display: none;
+		}
+		.header-mobile {
+			background: $colormenu;
+			display: block;
+			.icon-list-bar {
+				.icon-bar {
+					background-color: $colormenu;
+    				height: 4px;
+    				display: block;
+    				margin-bottom: 3px;
+    				transition: all 0.2s;
+				}
+				.icon-bar:nth-child(1) {
+					width: 28px;
+				}
+				.icon-bar:nth-child(2) {
+					width: 25px;
+				}
+				.icon-bar:nth-child(3) {
+					width: 28px;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
