@@ -1,0 +1,26 @@
+.content-single-tham-san {
+	.post-content:last-child {
+		&:after {
+			display: none;
+		}
+	}
+	h3 {
+		@include title(18px,700,$colormenu,$colormenu);
+	}
+	table {
+		margin-top: 20px;
+		margin-bottom: 40px;
+		th,td {
+			padding: 18px 20px !important;
+		}
+		th {
+			@include title(15px,700,$title,$title);
+		}
+		td {
+			@include title(15px,normal,$title,$title);
+		}
+	}
+	p {
+		margin-bottom: 20px;
+	}
+}

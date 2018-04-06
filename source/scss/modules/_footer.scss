@@ -12,8 +12,16 @@ footer {
 			display: inline-block;
 			@include title(16px,700,$title,none);
 		}
+		.register {
+			@media (max-width: 991px) {
+				margin-bottom: 15px;
+			}
+		}
 		.input-group {
 			margin-right: 15px;
+			@media (max-width: 991px) {
+				margin-bottom: 15px;
+			}
 			input {
 				border: 1px solid $border;
 				border-radius: 3px !important;
@@ -28,6 +36,9 @@ footer {
 			color: $white;
 			padding: 6px 23px;
     		font-weight: bold;
+    		@media (max-width: 991px) {
+    			width: 100%;
+    		}
 		}
 	}
 	.services {
@@ -35,6 +46,9 @@ footer {
 		border-bottom: 1px solid $border;
 		.services-item {
 			position: relative;
+			@media (max-width: 991px) {
+				margin-bottom: 20px;
+			}
 			.services-icon {
 				position: absolute;
 				top: 50%;
@@ -65,6 +79,9 @@ footer {
 		background: $backgrooundtop;
 		.logo-footer {
 			max-width: 50%;
+			@media (max-width: 991px) {
+				margin-bottom: 20px;
+			}
 		}
 		p, a {
 			@include title(13px,normal,$content,none);
