@@ -1,0 +1,44 @@
+.single-co-content {
+	.single-content-left {
+		.content {
+			padding: 14px 0 40px;
+			p {
+				@include title(15px,normal,$content,$content);
+				line-height: 25px;
+				margin-bottom: 20px;
+			}
+			img {
+				margin-bottom: 20px;
+			}
+			.view-more {
+				padding: 14px 0;
+				border-top: 1px solid $borderbottom;
+				border-bottom: 1px solid $borderbottom;
+				margin-bottom: 20px;
+				p {
+					margin: 0;
+					span, a {
+						font-size: 14px;
+					}
+					a {
+						color: $red;
+					}
+				}
+			}
+		}
+	}
+	.single-content-right {
+		.list-item.lien-quan {
+			.video-title {
+				padding-left: 0;
+			}
+			h4 {
+				line-height: 18px;
+				a {
+					font-size: 13px;
+					color: $title;
+				}
+			}
+		}
+	}
+}

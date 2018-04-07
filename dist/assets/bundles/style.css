@@ -332,6 +332,75 @@ strong {
     color: #9B9B9B;
 }
 
+.blog-pagination .wp-pagenavi span, .blog-pagination .wp-pagenavi a {
+    border: 1px solid #D5D5D5;
+    padding: 7px 14px;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.blog-pagination .wp-pagenavi span.current, .blog-pagination .wp-pagenavi a.page:hover {
+    background: #DF2437;
+    color: #ffffff;
+    border: none;
+}
+
+.blog-pagination .wp-pagenavi a.page {
+    background: #F8F8F8;
+    color: #4A4A4A;
+}
+
+.list-item.lien-quan .item {
+    margin: 22px 0;
+    position: relative;
+}
+
+.list-item.lien-quan .item .video-title {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+}
+
+@media (max-width: 767px) {
+    .list-item.lien-quan .item .video-title {
+        position: static;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+    }
+}
+
+.post-lien-quan {
+    padding: 40px 0;
+    background: #F7FBFE;
+    border-top: 1px solid #E5E7EB;
+}
+
+.post-lien-quan .category-title {
+    margin-left: 15px;
+}
+
+@media (max-width: 991px) {
+    .post-lien-quan .lien-quan-item {
+        margin-bottom: 20px;
+    }
+}
+
+.post-lien-quan .post-title {
+    margin: 12px 0 8px;
+}
+
+.post-lien-quan .post-title a {
+    font-size: 16px;
+    line-height: 22px;
+}
+
 /* Header */
 header .header-topbar {
     background: #F5F7FA;
@@ -364,7 +433,7 @@ header .menu-primary {
 }
 
 header .menu-primary .menu-item {
-    font-size: 15px;
+    font-size: 13px;
     color: #ffffff;
     letter-spacing: 1px;
     font-weight: bold;
@@ -416,9 +485,9 @@ header .dropdown-menu {
 }
 
 header .dropdown-menu .dropdown-item {
-    font-size: 1.4rem;
+    font-size: 16px;
     text-transform: none;
-    line-height: 4.3rem;
+    line-height: 2.3rem;
     border-bottom: 0.1rem solid #f3f3f3;
     color: #777777;
     font-weight: 400;
@@ -519,6 +588,11 @@ header .header-mobile {
     header .header-mobile .navbar-collapse .dropdown.open .dropdown-menu a:after {
         display: none;
     }
+}
+
+footer {
+    width: 100%;
+    float: left;
 }
 
 footer .footer-top {
@@ -1170,4 +1244,166 @@ footer .footer-list-menu .footer-list-menu-end .logo-footer-end {
 
 .content-single-tham-san p {
     margin-bottom: 20px;
+}
+
+.content-co-nhan-tao {
+    padding-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+    .content-co-nhan-tao .blog-pagination {
+        margin-bottom: 30px;
+    }
+}
+
+.content-co-nhan-tao .co-nhan-tao-box {
+    position: relative;
+}
+
+.content-co-nhan-tao .co-nhan-tao-box .box-title h3 a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    position: absolute;
+    bottom: 24px;
+    left: 30px;
+}
+
+.content-co-nhan-tao .co-nhan-tao-box .box-title h3 a:hover {
+    color: #ffffff;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.content-co-nhan-tao .list-item .item {
+    margin: 30px 0;
+}
+
+.content-co-nhan-tao .list-item .item:last-child {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .content-co-nhan-tao .list-item .item .item-content {
+        margin-top: 20px;
+    }
+}
+
+.content-co-nhan-tao .list-item .item .item-content h4, .content-co-nhan-tao .list-item .item .item-content p {
+    line-height: 22px;
+}
+
+.content-co-nhan-tao .list-item .item .item-content h4 a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2C2C2C;
+}
+
+.content-co-nhan-tao .list-item .item .item-content h4 a:hover {
+    color: #2C2C2C;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.content-co-nhan-tao .list-item .item .item-content p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #4A4A4A;
+}
+
+.content-co-nhan-tao .list-item .item .item-content p:hover {
+    color: #4A4A4A;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.content-co-nhan-tao .list-item .item .item-content .xem-them {
+    font-size: 12px;
+    font-weight: bold;
+    color: #DF2437;
+    text-transform: uppercase;
+}
+
+.content-co-nhan-tao .list-item .item .item-content .xem-them:hover {
+    color: #DF2437;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.content-co-nhan-tao .list-video .co-nhan-tao-video h4 a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2C2C2C;
+}
+
+.content-co-nhan-tao .list-video .co-nhan-tao-video h4 a:hover {
+    color: #2C2C2C;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.content-co-nhan-tao .list-video .list-item.lien-quan h4 a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2C2C2C;
+}
+
+.content-co-nhan-tao .list-video .list-item.lien-quan h4 a:hover {
+    color: #2C2C2C;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.single-co-content .single-content-left .content {
+    padding: 14px 0 40px;
+}
+
+.single-co-content .single-content-left .content p {
+    font-size: 15px;
+    font-weight: normal;
+    color: #4A4A4A;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.single-co-content .single-content-left .content p:hover {
+    color: #4A4A4A;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.single-co-content .single-content-left .content img {
+    margin-bottom: 20px;
+}
+
+.single-co-content .single-content-left .content .view-more {
+    padding: 14px 0;
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    margin-bottom: 20px;
+}
+
+.single-co-content .single-content-left .content .view-more p {
+    margin: 0;
+}
+
+.single-co-content .single-content-left .content .view-more p span, .single-co-content .single-content-left .content .view-more p a {
+    font-size: 14px;
+}
+
+.single-co-content .single-content-left .content .view-more p a {
+    color: #DF2437;
+}
+
+.single-co-content .single-content-right .list-item.lien-quan .video-title {
+    padding-left: 0;
+}
+
+.single-co-content .single-content-right .list-item.lien-quan h4 {
+    line-height: 18px;
+}
+
+.single-co-content .single-content-right .list-item.lien-quan h4 a {
+    font-size: 13px;
+    color: #2C2C2C;
 }

@@ -1,0 +1,65 @@
+.content-co-nhan-tao {
+	padding-bottom: 40px;
+	@media (max-width: 991px) {
+		.blog-pagination {
+			margin-bottom: 30px;
+		}
+	}
+	.co-nhan-tao-box {
+		position: relative;
+		.box-title {
+			h3 {
+				a {
+					@include title(24px,700,$white,$white);
+					position: absolute;
+					bottom: 24px;
+					left: 30px;
+				}
+			}
+		}
+	}
+	.list-item {
+		.item {
+			margin: 30px 0;
+			&:last-child {
+				margin-bottom: 20px;
+			}
+			.item-content {
+				@media (max-width: 767px) {
+					margin-top: 20px;
+				}
+				h4,p {
+					line-height: 22px;
+				}
+				h4 {
+					a {
+						@include title(16px,bold,$title,$title);
+					}
+				}
+				p {
+					@include title(14px,normal,$content,$content);
+				}
+				.xem-them {
+					@include title(12px,bold,$red,$red);
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+	.list-video {
+		.co-nhan-tao-video {
+			h4 {
+				a {
+					@include title(14px,bold,$title,$title);
+				}
+			}
+		}
+		.list-item.lien-quan {
+			h4 {
+				a {
+					@include title(14px,bold,$title,$title);
+				}
+			}
+		}	
+	}
+}
