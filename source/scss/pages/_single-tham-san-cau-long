@@ -6,6 +6,7 @@
 	}
 	h3 {
 		@include title(18px,700,$colormenu,$colormenu);
+		margin-left: 15px;
 	}
 	table {
 		margin-top: 20px;
@@ -21,6 +22,9 @@
 		}
 	}
 	p {
+		margin-bottom: 20px;
+	}
+	.hinh-anh {
 		margin-bottom: 20px;
 	}
 }

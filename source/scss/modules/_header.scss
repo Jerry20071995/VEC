@@ -44,10 +44,11 @@ header {
 			&:focus {
 				background-color: $background_gray !important;
 			}
-		}
-		@media (min-width: 991px) and (max-width: 1200px) {
+			@media (min-width: 991px) and (max-width: 1200px) {
 				font-size: 10px;
+			}
 		}
+		
 	}
 	.dropdown {
 		a {
@@ -89,7 +90,7 @@ header {
 	.header-mobile {
 		display: none;
 	}
-	@media (max-width: 991px) {
+	@media (max-width: 767px) {
 		.header-topbar, .logo-line, .menu-top {
 			display: none;
 		}
@@ -100,6 +101,12 @@ header {
 				position: relative;
 				img {
 					position: absolute;
+				}
+			}
+			.navbar {
+				margin-bottom: 0;
+				.navbar-nav {
+					border-top: 2px solid $border;
 				}
 			}
 			.navbar-toggler {
@@ -168,6 +175,36 @@ header {
 						a:after {
 							display: none;
 						}
+					}
+				}
+				.nav-item {
+					margin: 0 15px;
+				}
+				.nav-item:last-child {
+					padding-bottom: 100px;
+					border-bottom: none;
+				}
+				.nav-item.dropdown {
+					.nav-link.dropdown-toggle {
+						&:after {
+							background: url(../images/icons/arrow-menu-mobile.svg) no-repeat;
+						}
+					}
+				}
+				.ftSocial {
+					background: $backgrooundtop;
+					border-top: 1px solid $border;
+					border-bottom: 1px solid $border;
+					padding: 20px 15px;
+					margin: 0 -15px;
+					.col-xs-2 {
+						width: 20%;
+					}
+					a {
+						position: relative;
+						width: 100%;
+						display: inline-block;
+						padding: 0;
 					}
 				}
 			}

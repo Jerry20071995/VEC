@@ -453,7 +453,7 @@ header .menu-primary .menu-item:focus {
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {
-    header .menu-primary {
+    header .menu-primary .menu-item {
         font-size: 10px;
     }
 }
@@ -502,7 +502,7 @@ header .header-mobile {
     display: none;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     header .header-topbar, header .logo-line, header .menu-top {
         display: none;
     }
@@ -515,6 +515,12 @@ header .header-mobile {
     }
     header .header-mobile .navbar-brand img {
         position: absolute;
+    }
+    header .header-mobile .navbar {
+        margin-bottom: 0;
+    }
+    header .header-mobile .navbar .navbar-nav {
+        border-top: 2px solid #E5E7EB;
     }
     header .header-mobile .navbar-toggler {
         background-color: transparent;
@@ -587,6 +593,32 @@ header .header-mobile {
     }
     header .header-mobile .navbar-collapse .dropdown.open .dropdown-menu a:after {
         display: none;
+    }
+    header .header-mobile .navbar-collapse .nav-item {
+        margin: 0 15px;
+    }
+    header .header-mobile .navbar-collapse .nav-item:last-child {
+        padding-bottom: 100px;
+        border-bottom: none;
+    }
+    header .header-mobile .navbar-collapse .nav-item.dropdown .nav-link.dropdown-toggle:after {
+        background: url(../images/icons/arrow-menu-mobile.svg) no-repeat;
+    }
+    header .header-mobile .navbar-collapse .ftSocial {
+        background: #F5F7FA;
+        border-top: 1px solid #E5E7EB;
+        border-bottom: 1px solid #E5E7EB;
+        padding: 20px 15px;
+        margin: 0 -15px;
+    }
+    header .header-mobile .navbar-collapse .ftSocial .col-xs-2 {
+        width: 20%;
+    }
+    header .header-mobile .navbar-collapse .ftSocial a {
+        position: relative;
+        width: 100%;
+        display: inline-block;
+        padding: 0;
     }
 }
 
@@ -926,6 +958,12 @@ footer .footer-list-menu .footer-list-menu-end .logo-footer-end {
     transition: all 0.4s ease;
 }
 
+@media (max-width: 400px) {
+    .main .top-slider #slider li .title-slider h2 {
+        font-size: 20px;
+    }
+}
+
 .main .top-slider #slider li .title-slider p {
     font-size: 14px;
     font-weight: normal;
@@ -977,6 +1015,10 @@ footer .footer-list-menu .footer-list-menu-end .logo-footer-end {
     -webkit-transform: none !important;
         -ms-transform: none !important;
             transform: none !important;
+}
+
+.main .top-slider #carousel .slides li {
+    position: relative;
 }
 
 .main .top-slider #carousel .flex-active-slide {
@@ -1201,6 +1243,7 @@ footer .footer-list-menu .footer-list-menu-end .logo-footer-end {
     font-size: 18px;
     font-weight: 700;
     color: #172D61;
+    margin-left: 15px;
 }
 
 .content-single-tham-san h3:hover {
@@ -1243,6 +1286,10 @@ footer .footer-list-menu .footer-list-menu-end .logo-footer-end {
 }
 
 .content-single-tham-san p {
+    margin-bottom: 20px;
+}
+
+.content-single-tham-san .hinh-anh {
     margin-bottom: 20px;
 }
 

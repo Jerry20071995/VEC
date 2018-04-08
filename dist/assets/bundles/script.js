@@ -38,6 +38,13 @@
 
 		sync: "#carousel"
 	});
-
+	$('#carousel li').click(function () {
+		$('#carousel li').removeClass('flex-active-slide');
+		$(this).addClass('flex-active-slide');
+	});
 	$(window).load(function () {});
+
+	$('.header-mobile').find('.navbar-toggler').click(function () {
+		$(this).addClass('open');
+	});
 })(jQuery);

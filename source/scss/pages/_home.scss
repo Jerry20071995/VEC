@@ -41,6 +41,9 @@
 					h2 {
 						@include title(24px,900,$white,$white);
 						text-transform: uppercase;
+						@media (max-width: 400px) {
+							font-size: 20px;
+						}
 					}
 					p {
 						@include title(14px,normal,$white,$white);
@@ -69,6 +72,10 @@
 				width: 100% !important;
 				float: left;
 				transform: none !important;
+				li {
+					position: relative;
+					
+				}
 			}
 			.flex-active-slide {
 				box-shadow: 4px 8px 12px 0 rgba(0,0,0,0.15);
