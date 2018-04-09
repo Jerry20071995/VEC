@@ -17,6 +17,10 @@
 		});
 	});
 
+	$('.navbar-toggler').click(function () {
+		$(this).toggleClass('navbar-open');
+	});
+
 	$('#carousel').flexslider({
 		animation: "slide",
 		controlNav: false,
@@ -35,7 +39,6 @@
 		slideshow: true,
 		slideshowSpeed: 2000,
 		arrows: false,
-
 		sync: "#carousel"
 	});
 	$('#carousel li').click(function () {
@@ -44,7 +47,11 @@
 	});
 	$(window).load(function () {});
 
-	$('.header-mobile').find('.navbar-toggler').click(function () {
-		$(this).addClass('open');
+	$(window).scroll(function () {
+		if ($(window).scrollTop() >= 300) {
+			$('.menu-top').addClass('fixed-header');
+		} else {
+			$('.menu-top').removeClass('fixed-header');
+		}
 	});
 })(jQuery);

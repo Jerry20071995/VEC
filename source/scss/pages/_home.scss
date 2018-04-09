@@ -1,4 +1,10 @@
 .main {
+	@media (max-width: 991px) {
+		margin-top: 50px;
+		@media (max-width: 767px) {
+			margin-top: 0;
+		}
+	}
 	.category-list-product-detail {
 		@media (max-width: 991px) {
 			margin: 20px 0 30px;
@@ -26,11 +32,14 @@
 	}
 	
 	.top-slider {
-		padding: 40px 0;
+		padding: 45px 0;
 		.flex-direction-nav {
 				display: none;
 			}
 		#slider {
+			@media (max-width: 991px) {
+				margin-bottom: 0;
+			}
 			li {
 				position: relative;
 				.title-slider {
@@ -55,8 +64,13 @@
 				}
 			}
 		}
+		.flexslider {
+			padding: 0 15px;
+		}
+		.flexslider, .slides {
+			zoom: 0;
+		}
 		#carousel {
-			padding-left: 30px;
 			@media (max-width: 991px) {
 				display: none;
 			}
@@ -64,6 +78,11 @@
 				border: 2px solid $border;
 				padding: 15px;
 				margin-bottom: 20px;
+				margin-left: 20px;
+				max-width: 330px !important;
+				@media (max-width: 1200px) {
+					max-width: 300px !important;
+				}
 				&:last-child {
 					margin-bottom: 0;
 				}
@@ -79,7 +98,39 @@
 			}
 			.flex-active-slide {
 				box-shadow: 4px 8px 12px 0 rgba(0,0,0,0.15);
-			}
+			    /* Styling block element, not required */
+			    position: relative;
+			    padding: 1em;
+			    border: 2px solid $border;
+			  }
+
+			  /* Required for Down Triangle */
+			  .flex-active-slide:before, .flex-active-slide:after {
+			    content: "";
+			    position: absolute;
+			    width: 0;
+			    height: 0;
+			    top: 41%;
+			    border-style: solid;
+			    border-color: transparent;
+			    border-bottom: 0;
+			    transform: rotate(90deg);
+    			-webkit-transform: rotate(90deg);
+			  }
+
+			  /* Stroke */
+			  .flex-active-slide:before {
+			    border-top-color: $border;
+			    border-width: 16px;
+			    left: -25px;
+			  }
+
+			  /* Fill */
+			  .flex-active-slide:after {
+			    border-top-color: $white;
+			    border-width: 15px;
+			    left: -22px;
+			  }
 
 		}
 	}
